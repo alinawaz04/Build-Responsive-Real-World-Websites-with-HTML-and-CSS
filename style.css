@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,9 +31,15 @@ h1::before {
   letter-spacing: 2px;
 }
 
-img {
-  width: 200px;
+.img {
+  width: 250px;
   height: auto;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  float: left;
 }
 
 p {
@@ -41,6 +48,7 @@ p {
 
 .price {
   font-size: 2rem;
+  width: 100px;
 }
 
 .shipping {
@@ -49,13 +57,14 @@ p {
   text-transform: uppercase;
   font-size: 15px;
   margin-bottom: 20px;
+  float: right;
 }
 
 a {
   color: black;
 }
 .info {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 a:hover {
@@ -96,10 +105,11 @@ button:hover {
   height: auto;
   border: 5px solid black;
   margin: 50px auto;
+  clear: both;
 }
 
 .colors {
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .color {
@@ -132,4 +142,19 @@ button:hover {
 
 .brown {
   background-color: brown;
+}
+
+.left {
+  float: left;
+  width: 35%;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.right {
+  float: right;
+  width: 28%;
+  margin-top: 15px;
+  margin-left: 20px;
 }
